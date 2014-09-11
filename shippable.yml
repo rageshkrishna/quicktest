@@ -6,3 +6,6 @@ script:
   - which phantomjs
   - git config user.email
   - git config user.name
+  - mkdir -p shippable/outputs
+  - echo "Test" > shippable/outputs/foo.txt
+archive: true
